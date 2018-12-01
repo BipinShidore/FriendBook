@@ -1,0 +1,96 @@
+1. API Name:- Sign Up
+API URL:- "/users/signUp"
+API method:- "POST"
+Request :- {
+	"email":"john@gmail.com",
+	"password":"test@123",
+	"mobileNumber":"",
+	"userName":"johnDoe"
+}
+
+Response: - {
+    "code": 200,
+    "message": "User created successfully"
+}
+
+2. API Name:- Login
+API URL:- "/users/login"
+API method:- "POST"
+Request :- {
+	"email":"john@gmail.com",
+	"password":"test@123"
+}
+
+Response: - {
+    "code": 200,
+    "message": "User Logged In Successfully",
+    "data": [
+        {
+            "email": "john@gmail.com",
+            "mobileNumber": "",
+            "userName": "bipin",
+            "userId": "5c029afc5f479808d25d0e61"
+        }
+    ]
+}
+
+3. API Name:- Search User (By User Name)
+API URL:- "/users/search"
+API method:- "POST"
+Request :- {
+	"searchText":"john"
+}
+
+Response: - {
+    "code": 200,
+    "message": "Users Found",
+    "result": [
+        {
+            "_id": "5c029afc5f479808d25d0e61",
+            "email": "john@gmail.com",
+            "password": "test@123",
+            "mobileNumber": "",
+            "userName": "john"
+        }
+    ]
+}
+
+4. API Name:- Send Friend Request
+API URL:- "/friends/sendFriendRequest"
+API method:- "POST"
+Request :- {
+	"userId" : "5c029afc5f479808d25d0e61",
+	"friendId":"5c0294cbc8f3f6085d9c4698"
+}
+
+Response: - {
+            "code": 200,
+            "message": "Friend Request Sent Successfully"
+        }
+
+
+5. API Name:- Accept Friend Request
+API URL:- "/friends/acceptFriendRequest"
+API method:- "POST"
+Request :- {
+	"userId" : "5c029afc5f479808d25d0e61",
+	"friendId":"5c0294cbc8f3f6085d9c4698"
+}
+
+Response: - {
+    "code": 200,
+    "message": "Friend Request Accepeted Successfully"
+}
+
+6. API Name:- Remove Friend
+API URL:- "/friends/unfriend"
+API method:- "POST"
+Request :- {
+	"userId" : "5c029afc5f479808d25d0e61",
+	"friendId":"5c0294cbc8f3f6085d9c4698"
+}
+
+Response: - {
+            "code": 200,
+            "message": "Friend Removed Successfully"
+        }

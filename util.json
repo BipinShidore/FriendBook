@@ -1,0 +1,69 @@
+{
+    "responseMessages": {
+        "invalidParams": {
+            "code": 500,
+            "message": "Invaild parameters"
+        },
+        "invalidData": {
+            "code": 500,
+            "message": "Invaild Data"
+        },
+        "databaseError": {
+            "code": 500,
+            "message": "Database connection error.Please try after sometime."
+        },
+        "insertionSuccessfull": {
+            "code": 200,
+            "message": "Data Submitted Successfully"
+        },
+        "invalidCredentials": {
+            "code": 500,
+            "message": "Username & Password does not match"
+        },
+        "loginSuccessfull": {
+            "code": 200,
+            "message": "User Logged In Successfully"
+        },
+        "parameterMissing" : {
+            "code": 500,
+            "message": "Required parameters are missing"
+        },
+        "emailIdExists": {
+            "code": 500,
+            "message": "Email Id already exists"
+        },
+        "userNameAlreadyExists": {
+            "code": 500,
+            "message": "User Name already exists"
+        },
+        "userCreatedSuccessfully": {
+            "code": 200,
+            "message": "User created successfully"
+        },
+        "searchResult":{
+            "code":200,
+            "message" : "Users Found",
+            "result" : []
+        },
+        "friendAddedSuccessfully" : {
+            "code": 200,
+            "message": "Friend Request Sent Successfully"
+        },
+        "friendRequestAccepted" : {
+            "code": 200,
+            "message": "Friend Request Accepeted Successfully"
+        },
+        "invalidFriendId" : {
+            "code": 500,
+            "message": "Invalid Friend Id"
+        },
+        "friendRemovedSuccessfully" : {
+            "code": 200,
+            "message": "Friend Removed Successfully"
+        }
+    },
+    "dbCollectionName" : {
+        "users" : "users",
+        "userActivities" : "userActivities"
+      }
+}
